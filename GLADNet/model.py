@@ -160,6 +160,7 @@ class lowlight_enhance(object):
             return False, 0
 
     def test(self, test_low_data, test_high_data, test_low_data_names, save_dir):
+    # def test(self, test_low_data, test_high_data, test_low_data_names):
         tf.global_variables_initializer().run()
 
         print("[*] Reading checkpoint...")
@@ -179,7 +180,9 @@ class lowlight_enhance(object):
             start_time = time.time()
             result = self.sess.run(self.output, feed_dict = {self.input_low: input_low_test})
             total_run_time += time.time() - start_time
-            save_images(os.path.join(save_dir, name + "_glad."   + suffix), result)
+            # save_images(os.path.join(save_dir, name + "_glad."   + suffix), result)
+            save_images(os.path.join(save_dir, name + "."   + suffix), result)
+            
 
         ave_run_time = total_run_time / float(len(test_low_data))
         print("[*] Average run time: %.4f" % ave_run_time)
