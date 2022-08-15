@@ -1,0 +1,1 @@
+virtualenv --python=python2.7 gladnetEnv & source gladnetEnv/bin/activate & pip install -r requirements.txt

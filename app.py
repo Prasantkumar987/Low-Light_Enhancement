@@ -40,11 +40,11 @@ def main():
                         f.write((image_file).getbuffer())
 
                     with st.spinner('Wait for it...'):
-                        st.snow()
+                        # st.snow()   
                         os.system("python main.py --phase test --test_dir ./test_input_data --save_dir ./test_output_data")
                         # st.image(load_image(os.path.join("./test_output_data",image_file.name)), width=350)
                         image = [os.path.join("./test_input_data",image_file.name), os.path.join("./test_output_data",image_file.name)]
-                        st.image(image, width=350)
+                        st.image(image, width=300)
                     
                     st.success('Done!')
                     
