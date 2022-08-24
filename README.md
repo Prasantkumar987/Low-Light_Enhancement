@@ -94,7 +94,7 @@ python main.py
     --sample_dir=./sample                   # dir for saving evaluation results during training
  ```
  #### Objective Results ####
-We use the [Naturalness Image Quality Evaluator (NIQE)](https://ieeexplore.ieee.org/document/6353522) no-reference image quality score for quantitative comparison. NIQE compares images to a default model computed from images of natural scenes. A smaller score indicates better perceptual quality.
+[Naturalness Image Quality Evaluator (NIQE)](https://ieeexplore.ieee.org/document/6353522) is used for no-reference image quality score for quantitative comparison. NIQE compares images to a default model computed from images of natural scenes. A smaller score indicates better perceptual quality.
  
 | Dataset | DICM | NPE | MEF | Average |
 | ------ | ------ | ------ | ------ | ------ |
