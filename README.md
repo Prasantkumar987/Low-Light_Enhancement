@@ -1,6 +1,6 @@
 # Low-Light Enhancement in Images
 
-This Project has been created to adjust lightening like Natural Image Quality. I have used [GLADNet]()https://ieeexplore.ieee.org/document/8373911 for bringing lightning like real images.GLADNet(GLobal illumination Aware and Detail-preserving Network), first calculate a global illumination estimation for the low-light input, then adjust the illumination under the guidance of the estimation and supplement the details using a concatenation with the original input. 
+This Project has been created to adjust lightening like Natural Image Quality. I have used [GLADNet](https://ieeexplore.ieee.org/document/8373911) for bringing lightning like real images.GLADNet(GLobal illumination Aware and Detail-preserving Network), first calculate a global illumination estimation for the low-light input, then adjust the illumination under the guidance of the estimation and supplement the details using a concatenation with the original input. 
 
 Low light imaging and low light image enhancement have wild applications in our daily life and different scientific research fields:
 
@@ -16,7 +16,7 @@ This is a Tensorflow implantation of GLADNet
 GLADNet: Low-Light Enhancement Network with Global Awareness. In [FG'18](https://fg2018.cse.sc.edu/index.html) Workshop [FOR-LQ 2018](http://staff.ustc.edu.cn/~dongeliu/forlq2018/index.html) <br>
 [Wenjing Wang*](https://daooshee.github.io/website/), [Chen Wei*](https://weichen582.github.io/), [Wenhan Yang](https://flyywh.github.io/), [Jiaying Liu](http://www.icst.pku.edu.cn/struct/people/liujiaying.html). (* indicates equal contributions)<br>
 
-[Paper](http://www.icst.pku.edu.cn/F/course/icb/Pub%20Files/2018/wwj_fg2018.pdf)
+[Paper](http://www.icst.pku.edu.cn/F/course/icb/Pub%20Files/2018/wwj_fg2018.pdf), [Project Page](https://daooshee.github.io/fgworkshop18Gladnet/)
 
 ![Teaser Image](https://github.com/daooshee/fgworkshop18Gladnet/blob/master/images/fg-1478.jpg)
 
@@ -41,8 +41,7 @@ Go to the project directory
 
 To Create Virtual Environment
 ```
-  pip install virtualenv
-  virtualenv --python=python2.7 gladnetEnv 
+  bash setup.sh
 ```
 
 Activate Environment in Linux
