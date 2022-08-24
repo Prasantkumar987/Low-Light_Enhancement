@@ -41,7 +41,8 @@ Go to the project directory
 
 To Create Virtual Environment
 ```
-  bash setup.sh
+  pip install virtualenv
+  virtualenv --python=python2.7 gladnetEnv 
 ```
 
 Activate Environment in Linux
