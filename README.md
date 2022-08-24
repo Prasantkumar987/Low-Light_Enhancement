@@ -16,7 +16,7 @@ This is a Tensorflow implantation of GLADNet
 GLADNet: Low-Light Enhancement Network with Global Awareness. In [FG'18](https://fg2018.cse.sc.edu/index.html) Workshop [FOR-LQ 2018](http://staff.ustc.edu.cn/~dongeliu/forlq2018/index.html) <br>
 [Wenjing Wang*](https://daooshee.github.io/website/), [Chen Wei*](https://weichen582.github.io/), [Wenhan Yang](https://flyywh.github.io/), [Jiaying Liu](http://www.icst.pku.edu.cn/struct/people/liujiaying.html). (* indicates equal contributions)<br>
 
-[Paper](http://www.icst.pku.edu.cn/F/course/icb/Pub%20Files/2018/wwj_fg2018.pdf), [Project Page](https://daooshee.github.io/fgworkshop18Gladnet/)
+[Paper](http://www.icst.pku.edu.cn/F/course/icb/Pub%20Files/2018/wwj_fg2018.pdf)
 
 ![Teaser Image](https://github.com/daooshee/fgworkshop18Gladnet/blob/master/images/fg-1478.jpg)
 
@@ -41,7 +41,8 @@ Go to the project directory
 
 To Create Virtual Environment
 ```
-  bash setup.sh
+  pip install virtualenv
+  virtualenv --python=python2.7 gladnetEnv 
 ```
 
 Activate Environment in Linux
