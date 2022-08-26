@@ -9,26 +9,25 @@ def load_image(image_file):
 def main():
     st.title("Low Light Enhancement Application")
 
-    menu = ["Image","Dataset","DocumentFiles","About"]
+    st.markdown(
+    """
+    To use this web application just drag and drop a low lightening image to enhance appropriate lightening 
+    condition in image by the model. The model will return the resultant enhanced images with original images 
+    for comparison. 
+    """)
+
+    menu = ["Image"]
     choice = st.sidebar.selectbox("Models",menu)
 
     if(choice == "Image"):
         st.subheader("Image")
     
-    elif (choice == "Dataset"):
-        st.subheader("Dataset")
-
-    elif (choice == "DocumentFiles"):
-        st.subheader("DocumentFiles")
-
-  
-  
     if(choice == "Image"):
         # st.subheader("Image")
         uploaded_files = st.file_uploader("Upload Images", type=["png","jpg","jpeg"], accept_multiple_files=True)
 
         if uploaded_files is not None:
-                # TO See details
+                # To see details about Images uploaded
                 for image_file in uploaded_files:
                     # file_details = {"filename":image_file.name,"filetype":image_file.type,
                     #                 "filesize":image_file.size}
