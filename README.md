@@ -25,6 +25,8 @@ GLADNet: Low-Light Enhancement Network with Global
 
 ## Run the app locally
 
+https://user-images.githubusercontent.com/54981696/189492666-b0faa652-bea1-4b3e-9d50-fdaedb86b520.mp4
+
 Open a terminal and start by cloning the project repository
 
 ```bash
